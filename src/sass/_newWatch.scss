@@ -1,0 +1,121 @@
+/* mobile view */
+@media only screen and (max-width: 767px) {
+    .container {
+        margin: auto 20px;
+    }
+    .section_title {
+        color: rgba(20, 20, 20, 0.40);
+        font-family: Epilogue;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 14px; /* 116.667% */
+        letter-spacing: 0.72px;
+    }
+    .section_header {
+        color: var(--black, #141414);
+        font-family: Epilogue;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 125% */
+        letter-spacing: -0.64px;
+        margin: 8px 0 40px;
+    }
+    .newWatch_list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+    .newWatch_img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* tablet view */
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .container {
+        margin: auto 32px;
+    }
+    .section_title {
+        color: rgba(20, 20, 20, 0.40);
+        font-family: Epilogue;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 14px; /* 116.667% */
+        letter-spacing: 0.72px;
+    }
+    .section_header {
+        color: var(--dark-green, #1E2827);
+        font-family: Epilogue;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px; /* 110% */
+        letter-spacing: -0.8px;
+        width: 448px;
+        margin: 8px 0 40px;
+    }
+    .newWatch_list {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+    .newWatch_item {
+        flex-basis: calc(100% - 50px);
+    }
+    .newWatch_img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* desktop view */
+@media only screen and (min-width: 1158px) {
+    .container {
+        margin: 80px 132px;
+    }
+    .section_title {
+        color: rgba(20, 20, 20, 0.40);
+        font-family: Epilogue;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 14px; /* 116.667% */
+        letter-spacing: 0.72px;
+    }
+    .section_header {
+        color: var(--dark-green, #1E2827);
+        font-family: Epilogue;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px; /* 110% */
+        letter-spacing: -0.8px;
+        width: 448px;
+        margin: 8px 0 80px;
+    }
+    .newWatch_list {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+    .newWatch_item {
+        flex-basis: calc(100% - 50px);
+    }
+    .newWatch_img {
+        width: 100%;
+        height: auto;
+    }
+}
