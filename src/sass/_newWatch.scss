@@ -37,7 +37,7 @@
 }
 
 /* tablet view */
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
     .container {
         margin: auto 32px;
     }
@@ -79,7 +79,7 @@
 }
 
 /* desktop view */
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
     .container {
         margin: 80px 132px;
     }
