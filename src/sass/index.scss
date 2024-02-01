@@ -1,5 +1,6 @@
 @import './common';
 @import './example';
+@import './sale-section';
 @import './newWatch';
 
 * {
@@ -8,8 +9,10 @@
     font-family: 'Epilogue', sans-serif;
     font-style: normal;
 }
-.root {
+
+:root {
     --black: #141414;
     --dark-green: #1E2827;
     --white: #FFF; 
 }
+
