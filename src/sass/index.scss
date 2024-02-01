@@ -1,6 +1,7 @@
 @import './common';
 @import './example';
 @import './newWatch';
+@import './hero';
 
 * {
     margin: 0;
@@ -8,8 +9,14 @@
     font-family: 'Epilogue', sans-serif;
     font-style: normal;
 }
-.root {
+
+body{
+    background-color: red($color: #000000);
+}
+
+:root {
     --black: #141414;
     --dark-green: #1E2827;
     --white: #FFF; 
 }
+

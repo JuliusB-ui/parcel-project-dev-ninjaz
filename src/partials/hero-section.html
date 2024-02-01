@@ -1,1 +1,61 @@
-<p>This is the hero section</p>
+<div class="hero-container container">
+  <div class="hero-section-text">
+    <h1>Welcome to our collection of premium watches</h1>
+    <p>
+      Our watches are not just timepieces, but also an expression of your
+      personality and lifestyle. From classic designs to modern ones, we have a
+      watch to suit every taste and occasion.
+    </p>
+  </div>
+
+  <div class="container-images">
+    <div class="image-slider">
+      <!-- <img src="/assets/watch_1.png" alt="" /> -->
+    </div>
+    <div class="hero-iamge">
+      <img src="/assets/Rectangle 1.jpg" alt="" />
+    </div>
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/assets/watch-one-slider.png" alt=""></div>
+      <div class="swiper-slide"><img src="/assets/watch-two-slider.jpg"></div>
+      <div class="swiper-slide"><img src="/assets/watch-thee-slider.png"></div>
+      <div class="swiper-slide"><img src="/assets/watch-four-slider.png"></div>
+      <div class="swiper-slide"><img src="/assets/watch-five-slider.png"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <!-- If we need scrollbar -->
+</div>
+
+
+<!-- JS Files -->
+
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  document.querySelector('.swiper-button-next').addEventListener('click', function() {
+    // Check if the current slide is the last one
+    if (swiper.isEnd) {
+      // Reset to the first slide
+      swiper.slideTo(0);
+    } else {
+      // If not the last slide, proceed to the next slide
+      swiper.slideNext();
+    }
+  });
+</script>
