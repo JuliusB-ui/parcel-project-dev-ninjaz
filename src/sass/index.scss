@@ -1,6 +1,7 @@
 @import './common';
 @import './example';
 @import './newWatch';
+@import './aboutus';
 
 * {
   margin: 0;
@@ -8,7 +9,7 @@
   font-family: 'Epilogue', sans-serif;
   font-style: normal;
 }
-.root {
+:root {
   --black: #141414;
   --dark-green: #1e2827;
   --white: #fff;
