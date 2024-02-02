@@ -2,14 +2,17 @@
   margin: 80px 132px;
 }
 
-.section_title {
-  color: var(--black);
+.section_header {
+  color: var(--dark-green);
   font-family: Epilogue;
   font-size: 14px;
   font-style: normal;
 }
 
 .column1 .column2 {
+  display: block;
+  flex-direction: column;
+  -ms-flex-align: end;
   width: 439px;
-  gap: 40px;
+  margin: 40px;
 }
