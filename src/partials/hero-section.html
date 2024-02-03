@@ -1,61 +1,91 @@
 <div class="hero-container container">
   <div class="hero-section-text">
-    <h1>Welcome to our collection of premium watches</h1>
-    <p>
-      Our watches are not just timepieces, but also an expression of your
-      personality and lifestyle. From classic designs to modern ones, we have a
-      watch to suit every taste and occasion.
-    </p>
+    <div class="hero-text container">
+      <h1>Welcome to our collection of premium watches</h1>
+    </div>
+    <div class="paragraph-text container">
+      <p>
+        Our watches are not just timepieces, but also an expression of your
+        personality and lifestyle. From classic designs to modern ones, we have
+        a watch to suit every taste and occasion.
+      </p>
+    </div>
   </div>
 
   <div class="container-images">
     <div class="image-slider">
-      <!-- <img src="/assets/watch_1.png" alt="" /> -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/assets/watch-one-slider.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/watch-two-slider.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/watch-thee-slider.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/watch-four-slider.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/watch-five-slider.png" />
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Your custom slider controls -->
+      <div class="slider-images container">
+        <div class="sliders container">
+          <img src="/assets/2.png" height="40px" width="40px" alt="" onclick="goToPreviousSlide(0)" />
+   
+          <img src="/assets/2.png" height="40px" width="40px" alt="" onclick="goToNextSlide(0)" /> -->
+          <!-- <svg >
+            <use href="./images/icons.svg#right-arrow" />
+          </svg>
+          <svg >
+            <use href="./images/icons.svg#left-arrow" />
+          </svg> -->
+
+        </div>
+        <div class="timer container">
+            <img src="/assets/01.png" height="40px" width="40px" alt="" onclick="goToSlide(3)" />
+            <img src="/assets/Vector 3.png" height="40px" width="40px" alt="" onclick="goToSlide(4)" />
+            <img src="/assets/05.png" height="40px" width="40px" alt="" onclick="goToSlide(5)" />
+        </div>
     </div>
-    <div class="hero-iamge">
+    </div>
+
+    <!-- <div class="swiper-button-prev">test</div>
+    <div class="swiper-button-next"></div> -->
+
+    <div class="hero-image">
       <img src="/assets/Rectangle 1.jpg" alt="" />
     </div>
   </div>
-
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="/assets/watch-one-slider.png" alt=""></div>
-      <div class="swiper-slide"><img src="/assets/watch-two-slider.jpg"></div>
-      <div class="swiper-slide"><img src="/assets/watch-thee-slider.png"></div>
-      <div class="swiper-slide"><img src="/assets/watch-four-slider.png"></div>
-      <div class="swiper-slide"><img src="/assets/watch-five-slider.png"></div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-  <!-- If we need scrollbar -->
 </div>
-
 
 <!-- JS Files -->
 
 <script>
-  var swiper = new Swiper('.mySwiper', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  // Initialize Swiper
+  var mySwiper = new Swiper('.mySwiper', {
+      // Add your Swiper options here
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
   });
 
-  document.querySelector('.swiper-button-next').addEventListener('click', function() {
-    // Check if the current slide is the last one
-    if (swiper.isEnd) {
-      // Reset to the first slide
-      swiper.slideTo(0);
-    } else {
-      // If not the last slide, proceed to the next slide
-      swiper.slideNext();
-    }
-  });
+  // Function to go to a specific slide
+  function goToNextSlide(index) {
+    mySwiper.slideNext();
+  }
+
+  function goToPreviousSlide(index){
+    mySwiper.slidePrev();
+  }
+
 </script>

@@ -4,10 +4,14 @@
 </symbol>
 
 
+<symbol id="right-arrow">
+<rect x="0.5" y="0.5" width="41" height="41" rx="8.5" stroke="white"/>
+<path d="M18 27L24 21L18 15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
-
-
-
-
+<symbol id="left-arrow">
+<rect x="0.5" y="0.5" width="41" height="41" rx="8.5" stroke="white" stroke-opacity="0.5"/>
+<path d="M24 27L18 21L24 15" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
 </svg>
