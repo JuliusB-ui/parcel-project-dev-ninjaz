@@ -1,0 +1,118 @@
+<div data-modal class="modal-me modal is-hidden">
+  <div class="modal-window">
+    <button class="closed-me closed" type="button" data-modal-close>
+      <svg class="closed-icon" width="24" height="24">
+        <use href="images/icons.svg#modal-exit"></use>
+      </svg>
+    </button>
+    <div class="modal-container">
+      <div class="modal-watch">
+        <div class="modal-gallery">
+          <div class="top-image">
+            <img
+              src="images/IMG_13.jpg"
+              alt="Big Image"
+              width="276"
+              height="274"
+              id="bigImagex"
+              class="modal-img-bg"
+            />
+          </div>
+          <div class="modal-img-sm">
+            <img
+              src="images/IMG_13.jpg"
+              alt="Image 1"
+              class="small-image"
+              onclick="displayImage(this)"
+            />
+            <img
+              src="images/IMG_14.jpg"
+              alt="Image 2"
+              class="small-image"
+              onclick="displayImage(this)"
+            />
+            <img
+              src="images/IMG_15.jpg"
+              alt="Image 3"
+              class="small-image"
+              onclick="displayImage(this)"
+            />
+            <img
+              src="images/IMG_16.jpg"
+              alt="Image 4"
+              class="small-image"
+              onclick="displayImage(this)"
+            />
+            <img
+              src="images/IMG_17.jpg"
+              alt="Image 5"
+              class="small-image"
+              onclick="displayImage(this)"
+            />
+          </div>
+        </div>
+
+        <p class="modal-p">Tube Watch S42 Date Steel With Black Case</p>
+        <span class="modal-span">€395</span>
+      </div>
+
+      <form class="modal-form">
+        <div class="modal-form">
+          <label class="modal-label" for="user-name">Full Name</label>
+          <div class="modal-div">
+            <input
+              type="text"
+              id="user-name"
+              name="user-name"
+              class="modal-input"
+              placeholder="Enter your full name"
+              pattern="[A-Za-zÀ-ÖØ-öø-ÿ.' ]+"
+            />
+          </div>
+        </div>
+        <div class="modal-form">
+          <label class="modal-label" for="user-email">Email</label>
+          <div class="modal-div">
+            <input
+              type="email"
+              id="user-email"
+              name="user-email"
+              class="modal-input"
+              placeholder="Enter your email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            />
+          </div>
+        </div>
+        <div class="modal-form">
+          <label class="modal-label" for="user-number">Card number</label>
+          <div class="modal-div">
+            <input
+              type="text"
+              id="user-number"
+              name="user-number"
+              class="modal-input"
+              placeholder="Enter card"
+              pattern="[0-9]+-?[0-9]*"
+            />
+          </div>
+        </div>
+        <div class="modal-comment">
+          <label for="user-comment" class="modal-label">Comments</label>
+          <textarea
+            id="user-comment"
+            name="user-comment"
+            placeholder="Text your text"
+            class="modal-textarea"
+          ></textarea>
+        </div>
+
+        <button class="modal-submit" type="submit">Submit</button>
+        <p class="modal-agreement">
+          By clicking on “Submit” button, you agree to our
+          <span>Privacy Policy,</span><br />
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
