@@ -50,17 +50,7 @@
   background-color: transparent;
 }
 
-<<<<<<< Updated upstream
-=======
-// .closed:hover,
-// .closed:focus {
-//   color: var(--black, #141414);
-//   border: none;
-//   fill: #ffffff;
-//   font-size: larger;
-// }
 
->>>>>>> Stashed changes
 .modal-container {
   display: flex;
   padding: 0;
@@ -72,7 +62,7 @@
   margin: 0;
 }
 
-<<<<<<< Updated upstream
+
 .modal-gallery {
   display: flex;
   flex-direction: column;
@@ -91,36 +81,12 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
-=======
-.gallery {
-  display: flex;
-  flex-direction: column;
-}
-
-.top-image {
-  flex: 1;
-}
-
-.bottom-images {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.bottom-images .small-image {
-  width: 50px;
-  height: auto;
-  margin: 5px;
->>>>>>> Stashed changes
   cursor: pointer;
 }
 
 .modal-p {
   overflow: hidden;
-<<<<<<< Updated upstream
   color: var(--black);
-=======
-  color: var(--black, #141414);
->>>>>>> Stashed changes
   text-overflow: ellipsis;
   white-space: nowrap;
   font-family: Epilogue;
@@ -129,12 +95,8 @@
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.28px;
-<<<<<<< Updated upstream
   margin-top: 12px;
   width: 276px;
-=======
-  margin: 0;
->>>>>>> Stashed changes
 }
 
 .modal-span {
@@ -153,11 +115,7 @@
 }
 
 .modal-label {
-<<<<<<< Updated upstream
   color: var(--black);
-=======
-  color: #141414;
->>>>>>> Stashed changes
   font-family: Epilogue;
   font-size: 14px;
   font-style: normal;
@@ -182,7 +140,6 @@
   margin-top: 12px;
 }
 
-<<<<<<< Updated upstream
 .modal-input:invalid {
   border-color: red;
 }
@@ -191,8 +148,6 @@
   color: red;
 }
 
-=======
->>>>>>> Stashed changes
 .modal-comment {
   margin-bottom: 16px;
 }
@@ -217,13 +172,8 @@
   align-items: flex-start;
   gap: 10px;
   border-radius: 8px;
-<<<<<<< Updated upstream
   background: var(--dark-green);
   color: var(--white);
-=======
-  background: var(--dark-green, #1e2827);
-  color: var(--white, #fff);
->>>>>>> Stashed changes
   text-align: center;
   font-family: Epilogue;
   font-size: 12px;
@@ -245,10 +195,7 @@
   font-weight: 400;
   line-height: 14px;
   letter-spacing: -0.24px;
-<<<<<<< Updated upstream
   margin-top: 12px;
-=======
->>>>>>> Stashed changes
 }
 
 .modal-agreement span {
@@ -260,7 +207,6 @@
     width: 408px;
   }
 
-<<<<<<< Updated upstream
   .modal-watch {
     width: 100%;
   }
@@ -271,29 +217,18 @@
     margin-right: auto;
   }
 
-=======
->>>>>>> Stashed changes
   .modal-container {
     display: flex;
     flex-wrap: wrap;
   }
 
-<<<<<<< Updated upstream
   .top-image {
-=======
-  .modal-watch {
-    width: 100%;
->>>>>>> Stashed changes
     padding: 0px 10px;
     margin-left: auto;
     margin-right: auto;
   }
 
-<<<<<<< Updated upstream
   .modal-img-big {
-=======
-  .modal-img {
->>>>>>> Stashed changes
     width: 100%;
     margin-left: auto;
     margin-right: auto;
