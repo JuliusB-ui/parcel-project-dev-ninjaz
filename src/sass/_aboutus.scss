@@ -3,16 +3,13 @@
 }
 
 .section_header {
+  display: block;
   color: var(--dark-green);
   font-family: Epilogue;
   font-size: 14px;
   font-style: normal;
 }
 
-.column1 .column2 {
-  display: block;
-  flex-direction: column;
-  -ms-flex-align: end;
-  width: 439px;
-  margin: 40px;
+.column {
+  column-count: 2;
 }
