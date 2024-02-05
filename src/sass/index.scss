@@ -1,11 +1,11 @@
 @import './common';
 @import './header';
-// @import './hero';
+@import './hero';
 // @import './aboutus';
-// @import './catalog';
-// @import './modal';
-// @import './newWatch';
-// @import './sale-section';
+@import './catalog';
+@import './modal';
+@import './newWatch';
+@import './sale-section';
 @import './footer';
 
 * {
@@ -25,8 +25,4 @@
 
 .header {
   margin: 20px;
-}
-
-* {
-  overflow: hidden;
 }
