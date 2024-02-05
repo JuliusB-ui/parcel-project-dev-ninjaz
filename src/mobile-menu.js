@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
   const closeMenuIcon = document.querySelector('.close-menu-icon');
   const navList = document.querySelector('.nav-list');
-  const headerContent = document.querySelector('.header-content');
+  const headerContent = document.querySelector('.main-header');
   const body = document.body;
 
   let isMenuOpen = false;

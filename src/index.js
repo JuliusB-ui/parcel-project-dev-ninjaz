@@ -61,9 +61,3 @@ window.addEventListener('scroll', function () {
     }
   });
 });
-
-//modal image selection here
-function displayImage(imageUrl) {
-  var bigImage = document.getElementById('bigImagex');
-  bigImage.src = imageUrl.src;
-}

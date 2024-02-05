@@ -1,12 +1,12 @@
 @import './common';
-@import './header';
+// @import './header';
 @import './hero';
-// @import './aboutus';
-@import './catalog';
-@import './modal';
-@import './newWatch';
-@import './sale-section';
-@import './footer';
+// // @import './aboutus';
+// @import './catalog';
+// @import './modal';
+// @import './newWatch';
+// @import './sale-section';
+// @import './footer';
 
 * {
   margin: 0;
@@ -22,7 +22,55 @@
 }
 
 // MOBILE MARGIN
+@media screen and (max-width: 767px) {
+  .main-header {
+    padding: 30px 20px;
+  }
 
-.header {
-  margin: 20px;
+  .hero-section,
+  .catalog-section,
+  .newWatch_section,
+  .sale-section,
+  .footer {
+    padding: 40px 20px;
+  }
+}
+
+// TABLET MARGIN
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .main-header {
+    padding: 20px 32px;
+  }
+
+  .hero-section {
+    padding: 60px 23px 64px;
+  }
+
+  .catalog-section,
+  .newWatch_section,
+  .sale-section {
+    padding: 64px 32px;
+  }
+
+  .footer-section {
+    padding: 80px 32px 20px;
+  }
+}
+
+// DESKTOP MARGIN
+@media screen and (min-width: 1280px) {
+  .main-header {
+    padding: 20px 132px 0;
+  }
+
+  .hero-section,
+  .catalog-section,
+  .newWatch_section,
+  .sale-section {
+    padding: 80px 132px;
+  }
+
+  .footer-section {
+    padding: 104px 132px 32px;
+  }
 }
