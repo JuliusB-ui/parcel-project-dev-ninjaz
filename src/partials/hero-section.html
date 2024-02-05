@@ -1,0 +1,192 @@
+<div class="hero-container container">
+
+  <!-- Desktop View -->
+  <div class="hero-section-text">
+    <div class="hero-text container">
+      <h1>Welcome to our collection of premium watches</h1>
+    </div>
+    <div class="paragraph-text container">
+      <p>
+        Our watches are not just timepieces, but also an expression of your
+        personality and lifestyle. From classic designs to modern ones, we have
+        a watch to suit every taste and occasion.
+      </p>
+    </div>
+  </div>
+
+  <div class="container-images">
+
+    <div class="image-slider">
+      <div class="swiper mySwiper-desktop">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../src/images/watch-one.slider.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../src/images/watch-two-slider.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../src/images/watch-three-slider.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../src/images/watch-four-slder.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../src/images/watch-five-slider.jpg" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slider-images container">
+
+        <div class="sliders container">
+
+          <svg width="42" height="42" onclick="goToPreviousSlide()">
+            <use href="../src/images/icons.svg#left-arrow-slider">
+          </svg>
+
+          <svg width="42" height="42" onclick="goToNextSlide()">
+            <use href="../src/images/icons.svg#right-arrow-slider">
+          </svg>
+
+        </div>
+
+        <div class="timer">
+
+          <svg width="24" height="42">
+            <use href="../src/images/icons.svg#zero-one">
+          </svg>
+
+          <svg width="42" height="42">
+            <use href="../src/images/icons.svg#horizontal-line">
+          </svg>
+          <svg width="24" height="42">
+            <use href="../src/images/icons.svg#zero-five">
+          </svg>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="/assets/Rectangle 1.jpg" alt="" height="100%" />
+    </div>
+  </div>
+
+  <!-- End Desktop View -->
+
+  <!-- Start of Mobile View -->
+  <h1 class="heading-mobile-view">Welcome to our collection of premium watches</h1>
+
+  <div class="container-slider-mobile">
+
+    <div class="image-slider">
+      <div class="swiper mySwiper-mobile">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../src/images/watch-one.slider.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../src/images/watch-two-slider.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../src/images/watch-three-slider.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../src/images/watch-four-slder.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../src/images/watch-five-slider.jpg" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slider-images-mobile container">
+
+        <div class="sliders-mobile container">
+
+          <svg width="42" height="42" onclick="goToPreviousSlideMobile()">
+            <use href="../src/images/icons.svg#left-arrow-slider">
+          </svg>
+
+          <svg width="42" height="42" onclick="goToNextSlideMobile()">
+            <use href="../src/images/icons.svg#right-arrow-slider">
+          </svg>
+
+        </div>
+
+        <div class="timer-mobile">
+
+          <svg width="24" height="42">
+            <use href="../src/images/icons.svg#zero-one">
+          </svg>
+
+          <svg width="42" height="42">
+            <use href="../src/images/icons.svg#horizontal-line">
+          </svg>
+          <svg width="24" height="42">
+            <use href="../src/images/icons.svg#zero-five">
+          </svg>
+
+        </div>
+
+      </div>
+    </div>
+
+    <p class="paragraph-mobile">Our watches are not just timepieces, but also an expression of your personality and
+      lifestyle. From classic
+      designs to modern ones, we have a watch to suit every taste and occasion.</p>
+
+    <div class="hero-image-mobile">
+      <img src="/assets/Rectangle 1.jpg" alt="" height="100%" />
+    </div>
+
+  </div>
+  <!-- End of Mobile View -->
+
+</div>
+
+<!-- JS Files -->
+
+<script>
+  // Initialize Swiper
+  var mySwiperDestop = new Swiper('.mySwiper-desktop', {
+    // Add your Swiper options here
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  // Function to go to a specific slide
+  function goToNextSlide(index) {
+    mySwiperDestop.slideNext();
+  }
+
+  function goToPreviousSlide(index) {
+    mySwiperDestop.slidePrev();
+  }
+
+  var mySwiperMobile = new Swiper('.mySwiper-mobile', {
+    // Add your Swiper options here
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  // Function to go to a specific slide
+  function goToNextSlideMobile(index) {
+    mySwiperMobile.slideNext();
+  }
+
+  function goToPreviousSlideMobile(index) {
+    mySwiperMobile.slidePrev();
+  }
+
+</script>
+
