@@ -1,15 +1,17 @@
 @import './common';
 @import './example';
 @import './newWatch';
+@import './sale-section';
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Epilogue', sans-serif;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
 }
-.root {
-    --black: #141414;
-    --dark-green: #1E2827;
-    --white: #FFF; 
+
+:root {
+  --black: #141414;
+  --dark-green: #1e2827;
+  --white: #fff;
 }
