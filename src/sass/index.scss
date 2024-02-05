@@ -1,7 +1,12 @@
 @import './common';
-@import './example';
-@import './newWatch';
-@import './sale-section';
+@import './header';
+// @import './hero';
+// @import './aboutus';
+// @import './catalog';
+// @import './modal';
+// @import './newWatch';
+// @import './sale-section';
+@import './footer';
 
 * {
   margin: 0;
@@ -19,3 +24,13 @@ body{
   --dark-green: #1e2827;
   --white: #fff;
 }
+
+// MOBILE MARGIN
+
+.header {
+  margin: 20px;
+}
+
+// * {
+//   overflow:
+// }

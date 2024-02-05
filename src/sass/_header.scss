@@ -1,8 +1,3 @@
-body {
-  font-family: 'Epilogue', sans-serif;
-  background-color: #141414;
-}
-
 .main-header {
   background-color: #141414;
   color: #fff;
@@ -58,10 +53,6 @@ body {
   gap: 15px;
 }
 
-.mobile-menu-icon {
-  display: none;
-}
-
 /* Contact Box Styles */
 .contact-box {
   border-radius: 8px;
@@ -105,11 +96,7 @@ body {
 /* Media Queries */
 
 /* Mobile phone version 375px to 768px */
-@media only screen and (min-width: 375px) and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .nav-list,
   .contact-box {
     display: none;
@@ -163,7 +150,7 @@ body {
 }
 
 /* Tablet version 768px to 1280px */
-@media only screen and (min-width: 768px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   .nav-list,
   .contact-box {
     display: flex;

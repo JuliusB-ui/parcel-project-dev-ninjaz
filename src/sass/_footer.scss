@@ -1,7 +1,6 @@
 .footer {
   width: 100%;
   background: #1e2827;
-
   color: #ffffff;
   padding: 40px 0px 20px 0px;
 }
@@ -11,13 +10,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.29;
   color: #ffffff;
 }
 
 .footer-address {
   display: block;
-  margin-left: 132px;
 }
 
 .address-logo {
@@ -88,20 +87,16 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  color: #c6cdd1;
 }
 
 .text-text {
   margin-bottom: 14px;
-  margin-left: 132px;
 }
 
 .text-privacy {
   display: flex;
   align-items: center;
   position: relative;
-  padding-right: 132px;
-  color: #c6cdd1;
 }
 
 .text-privacy .underline:before {
@@ -132,9 +127,12 @@
 }
 .footer-nav-font {
   color: white;
-  font-family: 'Epilogue';
-  font-style: normal;
 }
+
+.copyright-font {
+  color: #c6cdd1;
+}
+
 .mobile-social-item {
   visibility: hidden;
 }
@@ -222,7 +220,7 @@
     width: 50px;
     height: 50px;
   }
-  .nav-item:not(:last-child) {
+  .footer-nav-item:not(:last-child) {
     margin-bottom: 18px;
   }
   .social-item {
@@ -278,11 +276,6 @@
   list-style-type: none;
 }
 
-.footer-nav-font {
-  color: white;
-  font-family: 'Epilogue';
-  font-style: normal;
-}
 .nav-link {
   text-decoration: none;
 }
