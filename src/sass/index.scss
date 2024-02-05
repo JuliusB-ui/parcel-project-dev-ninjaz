@@ -15,10 +15,6 @@
   font-style: normal;
 }
 
-body{
-    background-color: red($color: #000000);
-}
-
 :root {
   --black: #141414;
   --dark-green: #1e2827;
@@ -31,6 +27,6 @@ body{
   margin: 20px;
 }
 
-// * {
-//   overflow:
-// }
+* {
+  overflow: hidden;
+}
