@@ -1,12 +1,13 @@
 @import './common';
-// @import './header';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&display=swap');
+@import './header';
 @import './hero';
-// // @import './aboutus';
-// @import './catalog';
-// @import './modal';
-// @import './newWatch';
-// @import './sale-section';
-// @import './footer';
+// @import './aboutus';
+@import './catalog';
+@import './modal';
+@import './newWatch';
+@import './sale-section';
+@import './footer';
 
 * {
   margin: 0;
@@ -28,11 +29,14 @@
   }
 
   .hero-section,
-  .catalog-section,
   .newWatch_section,
   .sale-section,
   .footer {
     padding: 40px 20px;
+  }
+
+  .footer {
+    padding-bottom: 20px;
   }
 }
 
@@ -46,13 +50,12 @@
     padding: 60px 23px 64px;
   }
 
-  .catalog-section,
   .newWatch_section,
   .sale-section {
     padding: 64px 32px;
   }
 
-  .footer-section {
+  .footer {
     padding: 80px 32px 20px;
   }
 }
@@ -64,13 +67,12 @@
   }
 
   .hero-section,
-  .catalog-section,
   .newWatch_section,
   .sale-section {
     padding: 80px 132px;
   }
 
-  .footer-section {
+  .footer {
     padding: 104px 132px 32px;
   }
 }
