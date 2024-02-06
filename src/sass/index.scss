@@ -7,19 +7,28 @@
 @import './modal';
 @import './newWatch';
 @import './sale-section';
+<<<<<<< HEAD
+@import './aboutus';
+=======
 @import './footer';
 
+>>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
 * {
   margin: 0;
   padding: 0;
   font-family: 'Epilogue', sans-serif;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
 :root {
   --black: #141414;
   --dark-green: #1e2827;
   --white: #fff;
+<<<<<<< HEAD
+=======
 }
 
 // MOBILE MARGIN
@@ -75,4 +84,5 @@
   .footer {
     padding: 104px 132px 32px;
   }
+>>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
 }
