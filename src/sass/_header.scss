@@ -1,6 +1,9 @@
 .main-header {
   background-color: #141414;
   color: #fff;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
 
 .main-nav {
@@ -152,5 +155,21 @@
 
   .nav-list.visible {
     display: none;
+  }
+}
+
+//Edited part here
+@media screen and (max-width: 767px) {
+  .header-content {
+    padding: 25px 0;
+  }
+  .mobile-menu-icon {
+    z-index: 6;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main-header {
+    padding: 20px 0;
   }
 }

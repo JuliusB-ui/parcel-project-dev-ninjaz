@@ -202,3 +202,14 @@ img {
     margin-top: 20px;
   }
 }
+
+// edited part here
+.hero-section-text {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    padding-top: 122px;
+  }
+}

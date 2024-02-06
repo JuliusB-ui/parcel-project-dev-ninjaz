@@ -2,87 +2,228 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&display=swap');
 @import './header';
 @import './hero';
-// @import './aboutus';
+@import './aboutus';
 @import './catalog';
 @import './modal';
 @import './newWatch';
 @import './sale-section';
-<<<<<<< HEAD
-@import './aboutus';
-=======
 @import './footer';
 
->>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
 * {
   margin: 0;
   padding: 0;
   font-family: 'Epilogue', sans-serif;
   font-style: normal;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
 :root {
   --black: #141414;
   --dark-green: #1e2827;
   --white: #fff;
-<<<<<<< HEAD
-=======
 }
 
-// MOBILE MARGIN
-@media screen and (max-width: 767px) {
-  .main-header {
-    padding: 30px 20px;
-  }
+// // MOBILE MARGIN
+// @media screen and (max-width: 767px) {
+//   .main-header {
+//     padding: 30px 20px;
+//   }
 
-  .hero-section,
+//   .hero-section,
+//   .newWatch_section,
+//   .sale-section,
+//   .footer {
+//     padding: 40px 20px;
+//   }
+
+//   .footer {
+//     padding-bottom: 20px;
+//   }
+// }
+
+// // TABLET MARGIN
+// @media screen and (min-width: 768px) and (max-width: 1279px) {
+//   .main-header {
+//     padding: 20px 32px;
+//   }
+
+//   .hero-section {
+//     padding: 60px 23px 64px;
+//   }
+
+//   .newWatch_section,
+//   .sale-section {
+//     padding: 64px 32px;
+//   }
+
+//   .footer {
+//     padding: 80px 32px 20px;
+//   }
+// }
+
+// // // DESKTOP MARGIN
+// @media screen and (min-width: 1280px) {
+//   .main-header {
+//     padding: 20px 132px 0;
+//   }
+
+//   .hero-section,
+//   .newWatch_section,
+//   .sale-section {
+//     padding: 80px 132px;
+//   }
+
+//   .footer {
+//     padding: 104px 132px 32px;
+//   }
+// }
+// >>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
+// }
+@media screen and (max-width: 767px) {
+  .aboutus_section,
+  .catalog-section,
   .newWatch_section,
   .sale-section,
-  .footer {
-    padding: 40px 20px;
+  .footer-container,
+  .hero-section-text,
+  .container-images,
+  .main-nav,
+  .hero-container {
+    max-width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+    border: forestgreen solid 1px;
   }
-
-  .footer {
-    padding-bottom: 20px;
-  }
-}
-
-// TABLET MARGIN
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .main-header {
-    padding: 20px 32px;
-  }
-
   .hero-section {
-    padding: 60px 23px 64px;
+    background-color: var(--black);
   }
 
-  .newWatch_section,
-  .sale-section {
-    padding: 64px 32px;
+  section .hero-container {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .footer {
-    padding: 80px 32px 20px;
+  .menu-container {
+    z-index: 10;
+    border: yellow solid 1px;
   }
 }
 
-// DESKTOP MARGIN
 @media screen and (min-width: 1280px) {
-  .main-header {
-    padding: 20px 132px 0;
-  }
-
-  .hero-section,
+  .aboutus_section,
+  .catalog-section,
   .newWatch_section,
-  .sale-section {
-    padding: 80px 132px;
+  .sale-section,
+  .footer-container,
+  .hero-section-text,
+  .container-images,
+  .main-nav {
+    max-width: 1206px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .footer {
-    padding: 104px 132px 32px;
+  .mobile-menu-icon {
+    display: none;
   }
->>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
+}
+
+/*burger icon*/
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: yellow;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--NAVY-BLUE);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  display: block;
+  padding: 10px;
+  color: var(--NAVY-BLUE);
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.mobile-menu .active-two {
+  color: var(--OCEAN);
+}
+
+.mobile-menu {
+  margin-top: 80px;
+}
+
+.mobile-address {
+  position: fixed;
+  bottom: 40px;
+}
+
+.mobile-footer-add {
+  font-size: 20px;
+}
+
+.mobile-menu .unactive {
+  font-size: 20px;
+  margin: 0;
+}
+
+.social .social-mobile {
+  justify-content: space-between;
 }
