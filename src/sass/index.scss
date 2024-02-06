@@ -1,16 +1,88 @@
 @import './common';
-@import './example';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&display=swap');
+@import './header';
+@import './hero';
+// @import './aboutus';
+@import './catalog';
+@import './modal';
 @import './newWatch';
 @import './sale-section';
+<<<<<<< HEAD
 @import './aboutus';
+=======
+@import './footer';
+
+>>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
 * {
   margin: 0;
   padding: 0;
   font-family: 'Epilogue', sans-serif;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
 :root {
   --black: #141414;
   --dark-green: #1e2827;
   --white: #fff;
+<<<<<<< HEAD
+=======
+}
+
+// MOBILE MARGIN
+@media screen and (max-width: 767px) {
+  .main-header {
+    padding: 30px 20px;
+  }
+
+  .hero-section,
+  .newWatch_section,
+  .sale-section,
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer {
+    padding-bottom: 20px;
+  }
+}
+
+// TABLET MARGIN
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .main-header {
+    padding: 20px 32px;
+  }
+
+  .hero-section {
+    padding: 60px 23px 64px;
+  }
+
+  .newWatch_section,
+  .sale-section {
+    padding: 64px 32px;
+  }
+
+  .footer {
+    padding: 80px 32px 20px;
+  }
+}
+
+// DESKTOP MARGIN
+@media screen and (min-width: 1280px) {
+  .main-header {
+    padding: 20px 132px 0;
+  }
+
+  .hero-section,
+  .newWatch_section,
+  .sale-section {
+    padding: 80px 132px;
+  }
+
+  .footer {
+    padding: 104px 132px 32px;
+  }
+>>>>>>> accfe369d228c5c2f857c6ba3dd40dc780981293
 }

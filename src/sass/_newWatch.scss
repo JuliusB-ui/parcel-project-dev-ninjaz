@@ -1,101 +1,52 @@
-
-.section_title {
-    color: rgba(20, 20, 20, 0.40);
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.16;
-    letter-spacing: 0.72px;
+.new-section_title {
+  color: rgba(20, 20, 20, 0.4);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.16;
+  letter-spacing: 0.72px;
 }
-.section_header {
-    color: var(--dark-green, #1E2827);
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.10;
-    letter-spacing: -0.8px;
-    width: 448px;
-    margin: 8px 0 80px;
+.new-section_header {
+  color: var(--dark-green, #1e2827);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 448px;
+  margin: 8px 0 80px;
 }
 .newWatch_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
 }
 .newWatch_item {
-    flex-basis: calc(100% - 50px);
+  flex-basis: calc(100% - 50px);
 }
 .newWatch_img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* mobile view */
 @media only screen and (max-width: 767px) {
-    .section_title {
-        color: rgba(20, 20, 20, 0.40);
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 1.16;
-        letter-spacing: 0.72px;
-    }
-    .section_header {
-        color: var(--black, #141414);
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 1.25;
-        letter-spacing: -0.64px;
-        margin: 8px 0 40px;
-    }
-    .newWatch_list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        list-style: none;
-    }
-    .newWatch_img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+  .new-section_header {
+    color: var(--black, #141414);
+    font-size: 32px;
+    line-height: 1.25;
+    margin: 8px 0 40px;
+    max-width: 335px;
+  }
+  .newWatch_list {
+    flex-direction: column;
+  }
 }
 
 /* tablet view */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .section_title {
-        color: rgba(20, 20, 20, 0.40);
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 1.16;
-        letter-spacing: 0.72px;
-    }
-    .section_header {
-        color: var(--dark-green, #1E2827);
-        font-size: 40px;
-        font-weight: 600;
-        line-height: 1.10;
-        letter-spacing: -0.8px;
-        width: 448px;
-        margin: 8px 0 40px;
-    }
-    .newWatch_list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-        list-style: none;
-    }
-    .newWatch_item {
-        flex-basis: calc(100% - 50px);
-    }
-    .newWatch_img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+  .new-section_header {
+    margin: 8px 0 40px;
+  }
 }
-
-
-

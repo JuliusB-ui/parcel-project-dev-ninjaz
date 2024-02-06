@@ -8,7 +8,12 @@
 }
 
 .sale-section-title {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+  color: var(--dark-green);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
 }
 
 .sale-gallery {
@@ -95,13 +100,11 @@
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.14px;
-  // transition: height 250ms cubic-bezier(0,500,0.5,320);
-  // overflow: hidden;
 }
 
-// .sub-description:hover + .sale-item-desc {
-//     height: 100%;
-// }
+.sale-description {
+  width: 50%;
+}
 
 // TABLET VIEW
 
@@ -116,16 +119,26 @@
   }
 
   .sale-description {
-    width: 75%;
+    min-width: 90%;
     margin: 0 auto;
+  }
+
+  .sale-section-title {
+    padding-bottom: 40px;
   }
 }
 
+// MOBILE VIEW
 @media screen and (max-width: 768px) {
-  .sale-section {
-    margin: 20px;
-  }
   .images {
     max-width: 100%;
+  }
+  .sale-section-title {
+    color: var(--black);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.64px;
+    padding-bottom: 40px;
   }
 }
