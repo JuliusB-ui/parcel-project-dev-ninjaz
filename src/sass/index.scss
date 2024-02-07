@@ -27,7 +27,6 @@
     padding: 30px 20px;
   }
 
-  .hero-section,
   .newWatch_section,
   .sale-section,
   .footer {
@@ -45,7 +44,7 @@
     padding: 20px 32px;
   }
 
-  .hero-section {
+  .hero-container {
     padding: 60px 23px 64px;
   }
 
@@ -57,6 +56,10 @@
   .footer {
     padding: 80px 32px 20px;
   }
+
+  .hero-section-text {
+    display: none;
+  }
 }
 
 // DESKTOP MARGIN
@@ -65,7 +68,7 @@
     padding: 20px 132px 0;
   }
 
-  .hero-section,
+  .hero-container,
   .newWatch_section,
   .sale-section {
     padding: 80px 132px;
@@ -74,4 +77,16 @@
   .footer {
     padding: 104px 132px 32px;
   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+
+  .heading-mobile-view {
+    display: none;
+  }
+
+  .container-slider-mobile{
+    display: none;
+  }
+
 }

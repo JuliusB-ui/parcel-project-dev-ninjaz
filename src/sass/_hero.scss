@@ -7,7 +7,6 @@ img {
 .hero-container {
   margin: 0;
   background-color: var(--black);
-  padding: 40px 200px 40px 200px;
 
   .hero-section-text {
     display: flex;
@@ -38,7 +37,7 @@ img {
       font-weight: 300;
       font-size: 14px;
       line-height: 18px;
-      margin-left: 250px;
+      margin-left: 100px;
     }
   }
 }
@@ -89,37 +88,75 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 1279px) {
+.hero-image-mobile {
+  margin-top: 20px;
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
   .heading-mobile-view {
+    display: none;
+  }
+
+  .container-slider-mobile {
+    display: none;
+  }
+
+  .slider-images-mobile {
+    display: none;
+  }
+
+  .paragraph-mobile {
+    display: none;
+  }
+
+  .hero-container .hero-section-text {
+    display: none;
+  }
+  
+  .container-images {
+    display: none;
+  }
+
+  .heading-tablet-view {
     display: block;
     font-size: 38;
     line-height: 40px;
     font-weight: 600;
     color: var(--white);
+    margin-bottom: 25px;
   }
 
-  .container-slider-mobile {
+  .container-tablet-text{ 
     display: block;
-    margin-top: 50px;
   }
 
-  .slider-images-mobile {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .paragraph-mobile {
-    font-weight: 300px;
+  .paragraph-tablet {
+    font-weight: 300;
     font-size: 14px;
     line-height: 18px;
     color: var(--white);
+    margin-bottom: 25px;
   }
 
-  .hero-image-mobile {
+  
+
+  .hero-image-tablet {
     margin-top: 20px;
   }
+
+  .slider-images-tablet{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
+
+
 
 @media screen and (max-width: 768px) {
   .hero-container {
@@ -196,9 +233,47 @@ img {
     font-size: 14px;
     line-height: 18px;
     color: var(--white);
+    margin-bottom: 25px;
   }
 
   .hero-image-mobile {
     margin-top: 20px;
   }
+
+  .heading-tablet-view {
+    display: none;
+  }
+
+  .paragraph-tablet {
+    display: none;
+  }
+
+  .hero-image-tablet {
+    display: none;
+  }
+
+  .container-tablet{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* Your CSS styles for this range */
+  .heading-tablet-view {
+    display: none;
+  }
+  
+  .paragraph-tablet {
+    display: none;
+  }
+  
+  .hero-image-tablet {
+    display: none;
+  }
+
+  .container-tablet{
+    display: none;
+  }
+
 }
