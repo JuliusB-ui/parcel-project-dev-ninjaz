@@ -148,11 +148,11 @@
 }
 
 //catalog phone view start here
-@media (min-width: 150px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .catalog-section {
     width: 100%;
-    padding: 18px;
     margin: 0;
+    padding: 40px 0;
   }
 
   .catalog-ul {
@@ -187,10 +187,10 @@
 }
 
 //catalog tablet view start here
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .catalog-section {
     width: 100%;
-    padding: 72px;
+    padding: 40px 0;
   }
 
   .catalog-div,
@@ -236,7 +236,7 @@
 }
 
 //hiding 9 to 12 element starting tablet view here
-@media (max-width: 1157px) {
+@media (max-width: 1279px) {
   .catalog-li:nth-child(n + 9) {
     position: absolute;
     width: 1px;
@@ -255,13 +255,13 @@
 }
 
 //catalog web view start here
-@media (min-width: 1158px) {
+@media (min-width: 1280px) {
   .catalog-div {
-    width: 1158px;
+    width: 1206px;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
+    max-width: 1206px;
   }
 
   .catalog-front {

@@ -47,7 +47,7 @@ img {
   flex-direction: row;
   gap: 10px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 80px;
   // width: 100%;
 
   .image-slider {
@@ -92,11 +92,7 @@ img {
   margin-top: 20px;
 }
 
-
-
-
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-
   .heading-mobile-view {
     display: none;
   }
@@ -116,7 +112,7 @@ img {
   .hero-container .hero-section-text {
     display: none;
   }
-  
+
   .container-images {
     display: none;
   }
@@ -130,7 +126,7 @@ img {
     margin-bottom: 25px;
   }
 
-  .container-tablet-text{ 
+  .container-tablet-text {
     display: block;
   }
 
@@ -142,13 +138,11 @@ img {
     margin-bottom: 25px;
   }
 
-  
-
   .hero-image-tablet {
     margin-top: 20px;
   }
 
-  .slider-images-tablet{
+  .slider-images-tablet {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
@@ -156,13 +150,10 @@ img {
   }
 }
 
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero-container {
     margin: 0;
     background-color: var(--black);
-    padding: 20px;
 
     .hero-section-text {
       display: none;
@@ -219,7 +210,7 @@ img {
 
   .container-slider-mobile {
     display: block;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .slider-images-mobile {
@@ -252,10 +243,9 @@ img {
     display: none;
   }
 
-  .container-tablet{
+  .container-tablet {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -263,17 +253,192 @@ img {
   .heading-tablet-view {
     display: none;
   }
-  
+
   .paragraph-tablet {
     display: none;
   }
-  
+
   .hero-image-tablet {
     display: none;
   }
 
-  .container-tablet{
+  .container-tablet {
+    display: none;
+  }
+}
+
+// edited part here
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    padding-top: 122px;
+  }
+
+  .image-slider {
+    width: 80%;
+    padding-bottom: 30px;
+  }
+
+  .paragraph-mobile-div {
+    width: 100%;
+  }
+  .paragraph-mobile {
+    padding-left: 87px;
+    letter-spacing: -0.28px;
+  }
+
+  .hero-image-mobile {
+    padding-bottom: 40px;
+  }
+
+  .heading-tablet-view,
+  .paragraph-text-tablet,
+  .hero-image-tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .tablet-view {
+    padding-top: 148px;
+    padding-bottom: 64px;
+  }
+  .hero-section {
+    background-color: var(--black);
+  }
+
+  .heading-tablet-view {
+    padding-bottom: 60px;
+  }
+
+  p.paragraph-tablet {
+    width: 50%;
+    font-family: 'Epilogue', sans-serif;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 250px;
+    padding-bottom: 40px;
+  }
+
+  .heading-tablet-view h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.03;
+    letter-spacing: -2.4px;
+    color: #ffffff;
+    margin: 0;
+    width: 90%;
+  }
+
+  .heading-mobile-view {
     display: none;
   }
 
+  .hero-container {
+    display: none;
+  }
+
+  .container-slider-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    padding-top: 148px;
+  }
+
+  .tablet-view {
+    display: none;
+  }
+}
+
+// edited part here
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    padding-top: 122px;
+  }
+
+  .image-slider {
+    width: 80%;
+    padding-bottom: 30px;
+  }
+
+  .paragraph-mobile-div {
+    width: 100%;
+  }
+  .paragraph-mobile {
+    padding-left: 87px;
+    letter-spacing: -0.28px;
+  }
+
+  .hero-image-mobile {
+    padding-bottom: 40px;
+  }
+
+  .heading-tablet-view,
+  .paragraph-text-tablet,
+  .hero-image-tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .tablet-view {
+    padding-top: 148px;
+    padding-bottom: 64px;
+  }
+  .hero-section {
+    background-color: var(--black);
+  }
+
+  .heading-tablet-view {
+    padding-bottom: 60px;
+  }
+
+  p.paragraph-tablet {
+    width: 50%;
+    font-family: 'Epilogue', sans-serif;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 250px;
+    padding-bottom: 40px;
+  }
+
+  .heading-tablet-view h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.03;
+    letter-spacing: -2.4px;
+    color: #ffffff;
+    margin: 0;
+    width: 90%;
+  }
+
+  .heading-mobile-view {
+    display: none;
+  }
+
+  .hero-container {
+    display: none;
+  }
+
+  .container-slider-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    padding-top: 148px;
+  }
+
+  .tablet-view {
+    display: none;
+  }
 }

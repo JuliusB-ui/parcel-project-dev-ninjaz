@@ -21,72 +21,95 @@
   --white: #fff;
 }
 
-// MOBILE MARGIN
 @media screen and (max-width: 767px) {
-  .main-header {
-    padding: 30px 20px;
-  }
-
+  .aboutus_section,
+  .catalog-section,
   .newWatch_section,
   .sale-section,
-  .footer {
-    padding: 40px 20px;
-  }
-
-  .footer {
-    padding-bottom: 20px;
-  }
-}
-
-// TABLET MARGIN
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .main-header {
-    padding: 20px 32px;
-  }
-
-  .hero-container {
-    padding: 60px 23px 64px;
-  }
-
-  .newWatch_section,
-  .sale-section {
-    padding: 64px 32px;
-  }
-
-  .footer {
-    padding: 80px 32px 20px;
-  }
-
-  .hero-section-text {
-    display: none;
-  }
-}
-
-// DESKTOP MARGIN
-@media screen and (min-width: 1280px) {
-  .main-header {
-    padding: 20px 132px 0;
-  }
-
+  .footer-container,
+  .hero-section-text,
+  .container-images,
+  .header-content,
   .hero-container,
+  .mobile-view {
+    max-width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-section {
+    background-color: var(--black);
+  }
+
+  section .hero-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu-container {
+    z-index: 10;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .aboutus_section,
+  .catalog-section,
   .newWatch_section,
-  .sale-section {
-    padding: 80px 132px;
+  .sale-section,
+  .footer-container,
+  .hero-section-text,
+  .container-images,
+  .main-nav,
+  .tablet-view {
+    max-width: 734px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .footer {
-    padding: 104px 132px 32px;
+  section .hero-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // mobile menu backup
+  // .mobile-menu-icon,
+  // button.menu-toggle {
+  //   display: none;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   border: green solid 1px;
+  // }
+}
+
+@media screen and (min-width: 1280px) {
+  .aboutus_section,
+  .catalog-section,
+  .newWatch_section,
+  .sale-section,
+  .footer-container,
+  .hero-section-text,
+  .container-images,
+  .main-nav {
+    max-width: 1206px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-menu-icon {
+    display: none;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
+// @media screen and (min-width: 1280px) {
+//   .main-nav {}
 
-  .heading-mobile-view {
-    display: none;
-  }
+//   .aboutus_section,
+//   .catalog-section,
+//   .newWatch_section,
+//   .sale-section {
+//     padding: 80px 132px;
+//   }
 
-  .container-slider-mobile{
-    display: none;
-  }
-
-}
+//   .footer {
+//     padding: 104px 132px 32px;
+//   }
+// }

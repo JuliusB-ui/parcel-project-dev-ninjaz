@@ -1,3 +1,7 @@
+.sale-section {
+  padding: 80px 0 160px;
+}
+
 .sale-container {
   display: flex;
   justify-content: center;
@@ -119,12 +123,16 @@
   }
 
   .sale-description {
-    min-width: 90%;
+    width: 572px;
     margin: 0 auto;
   }
 
   .sale-section-title {
     padding-bottom: 40px;
+  }
+
+  .sale-section {
+    padding: 64px 0 128px;
   }
 }
 
@@ -140,5 +148,13 @@
     line-height: 1.25;
     letter-spacing: -0.64px;
     padding-bottom: 40px;
+  }
+
+  .sale-section {
+    padding: 40px 0 80px;
+  }
+
+  .sale-description {
+    width: 365px;
   }
 }

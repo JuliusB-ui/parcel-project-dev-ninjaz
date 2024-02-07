@@ -1,3 +1,7 @@
+.newWatch_container {
+  margin: 80px 0;
+}
+
 .new-section_title {
   color: rgba(20, 20, 20, 0.4);
   font-size: 12px;
@@ -42,11 +46,17 @@
   .newWatch_list {
     flex-direction: column;
   }
+  .newWatch_container {
+    margin: 40px 0;
+  }
 }
 
 /* tablet view */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   .new-section_header {
     margin: 8px 0 40px;
+  }
+  .newWatch_container {
+    margin: 64px 0;
   }
 }
