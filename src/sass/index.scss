@@ -28,7 +28,7 @@
 //   }
 
 //   .hero-section,
-//   .newWatch_section,
+// .newWatch_section,
 //   .sale-section,
 //   .footer {
 //     padding: 40px 20px;
@@ -86,7 +86,7 @@
   .hero-section-text,
   .container-images,
   .main-nav,
-  .hero-container {
+  .mobile-view {
     max-width: 365px;
     margin-left: auto;
     margin-right: auto;
@@ -107,6 +107,34 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .aboutus_section,
+  .catalog-section,
+  .newWatch_section,
+  .sale-section,
+  .footer-container,
+  .hero-section-text,
+  .container-images,
+  .main-nav,
+  .tablet-view {
+    max-width: 734px;
+    margin-left: auto;
+    margin-right: auto;
+    border: green solid 1px;
+  }
+
+  section .hero-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // mobile menu backup
+  .mobile-menu-icon,
+  button.menu-toggle {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .aboutus_section,
   .catalog-section,
@@ -121,7 +149,9 @@
     margin-right: auto;
   }
 
-  .mobile-menu-icon {
+  // mobile menu backup
+  .mobile-menu-icon,
+  button.menu-toggle {
     display: none;
   }
 }
@@ -144,7 +174,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -160,8 +189,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: yellow;
+  padding: 25px 0;
+  background-color: var(--dark-green);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -175,11 +204,14 @@
   transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: var(--NAVY-BLUE);
+.headermodal-logo-close {
+  max-width: 365px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: black solid 1px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .mobile-menu {
@@ -200,10 +232,6 @@
   color: var(--NAVY-BLUE);
   text-decoration: none;
   margin-bottom: 40px;
-}
-
-.mobile-menu .active-two {
-  color: var(--OCEAN);
 }
 
 .mobile-menu {
