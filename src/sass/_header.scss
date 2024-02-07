@@ -101,7 +101,6 @@
   .close-menu-icon {
     display: block;
     margin-top: 5px;
-    position: fixed;
     right: 10px;
     top: 10px;
     cursor: pointer;
@@ -109,8 +108,6 @@
   }
 
   .header-logo {
-    position: fixed;
-    left: 10px;
     z-index: 1000;
   }
 
@@ -138,6 +135,15 @@
       color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
     margin: 5px;
+  }
+
+  .nav-item a.nav-link:hover,
+  .nav-item a.nav-link:focus,
+  .contact-number:hover,
+  .contact-number:focus {
+    text-shadow: 0 0 10px rgba(23, 203, 235, 0.8),
+      0 0 20px rgba(11, 231, 247, 0.8), 0 0 30px rgba(0, 183, 255, 0.7);
+    transform: scale(1.13);
   }
 
   .nav-list.visible {
